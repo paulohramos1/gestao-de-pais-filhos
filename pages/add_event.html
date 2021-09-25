@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Evento</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/add_event.css">
+</head>
+
+<body>
+    <div class="container_addEvent">
+        <form class="container_addEvent_form">
+            <div class="container_addEvent_calendar">
+                <span class="material-icons">close</span>
+            </div>
+            <div class="container_addEvent_btn_newEvent">
+                <button class="addEvent_btn_newEvent">
+                    <span class="material-icons">add_circle_outline</span>
+                    Adicionar um evento
+                </button>
+                <button class="addEvent_btn_newTask">
+                    <span class="material-icons">add_circle_outline</span>
+                    Adicionar uma tarefa
+                </button>
+            </div>
+            <div class="container_addEvent_input_name">
+                <label for="iptName">Nome</label>
+                <input class="addEvent_input_name" id="iptName" type="text">
+                <span class="focus-input"></span>
+            </div>
+            <div class="container_addEvent_input_dtInitial">
+                <label for="iptdtInitial">Data de Ínicio</label>
+                <input class="addEvent_input_dtInitial" id="iptdtInitial" type="text">
+                <span class="focus-input"></span>
+            </div>
+            <div class="container_addEvent_input_dtFinish">
+                <label for="iptdtFinish">Data de Término</label>
+                <input class="addEvent_input_dtFinish" id="iptdtFinish" type="text">
+                <span class="focus-input"></span>
+            </div>
+            <div class="container_addEvent_input_allDay">
+                <input type="checkbox" id="ckb2" class="addEvent_input_allDay_checkbox" name="allDay">
+                <label for="ckb2">
+                Dia Todo
+                </label>
+            </div>
+
+            <div class="container_addEvent_input_child">
+                <label for="iptChild">Filho</label>
+                <span class="material-icons">face</span>
+            </div>
+            <div class="container_addEvent_input_place">
+                <label for="iptplace">Lugar</label>
+                <input class="addEvent_input_place" id="iptdtplace" type="text">
+                <span class="focus-input"></span>
+            </div>
+            <div class="container_addEvent_input_notes">
+                <label for="iptnotes">Notas</label>
+                <textarea class="addEvent_input_notes" id="iptnotes"></textarea>
+                <span class="focus-input"></span>
+            </div>
+            <div class="container_addEvent_btn">
+                <button class="addEvent_btn_add">Adicionar</button>
+                <button class="addEvent_btn_cancel">Cancelar</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
