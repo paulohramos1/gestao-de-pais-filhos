@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <title>Cadastro da Família</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/my_profile.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <div class="container_header_logotipo">Logotipo</div>
+            <div class="header_logotipo">
+                Logotipo
+            </div>
             <div>
                 <span class="material-icons">face</span>
-                <div class="container_header_perfil_dropdown">
-                    <button class="container_header_perfil_dropdown_btn">Nome Responsável
-                        <span class="material-icons">expand_more</span>
-                    </button>
+                <div class="dropdown">
+                    <button class="dropbtn">Nome Responsável
+                    <span class="material-icons">expand_more</span>
+                </button>
                 </div>
             </div>
-            <div class="container_header_navbar">
+            <div class="navbar">
                 <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
                 <a href="#"><span class="material-icons">date_range</span>Calendário</a>
                 <a href="#"><span class="material-icons">task</span>Tarefas</a>
@@ -34,60 +35,51 @@
                 <a href="#"><span class="material-icons">question_answer</span>Recados</a>
                 <a href="#"><span class="material-icons">people</span>Cadastros</a>
             </div>
-
         </header>
         <main class="main">
             <div class="container_main">
                 <!-- Caminho -->
                 <div class="">
-                    <span>Meu Perfil</span>
+                    <span>Cadastro da Família</span>
                 </div>
-                <!-- Nome Completo -->
-                <div class="container_main_input_name">
-                    <input class="main_input_name" id="iptname" type="text">
-                    <label for="iptname">Nome Completo</label>
+                <!-- Seus Dados -->
+                <div class="container_main_input_yourdatas">
+                    <p>Seus Dados</p>
+                    <input class="main_input_yourname" id="iptyourname" type="text">
+                    <label for="iptyourname">Nome</label>
+                    <span class="focus-input"></span>
+                    <input class="main_input_yourphone" id="iptyourphone" type="text">
+                    <label for="iptyourphone">Telefone</label>
                     <span class="focus-input"></span>
                 </div>
-                <!-- Telefone -->
-                <div class="container_main_input_phone">
-                    <input class="main_input_phone" id="iptphone" type="text">
-                    <label for="iptphone">Telefone</label>
+                <!-- Dados do parceiro -->
+                <div class="container_main_input_otherdatas">
+                    <p>Dados do parceiro</p>
+                    <input class="main_input_othername" id="iptothername" type="text">
+                    <label for="iptothername">Nome</label>
+                    <span class="focus-input"></span>
+                    <input class="main_input_otherphone" id="iptotherphone" type="text">
+                    <label for="iptotherphone">Telefone</label>
                     <span class="focus-input"></span>
                 </div>
-                <!-- Data de nascimento -->
-                <div class="container_main_input_date_birthday">
-                    <input class="main_input_date_birthday" id="iptdatebirthday" type="text">
-                    <label for="iptdatebirthday">Data de Nascimento</label>
+                <!-- Filhos -->
+                <div class="container_main_input_childdatas">
+                    <p>Seus Filhos</p>
+                    <input class="main_input_childname" id="iptchildname" type="text">
+                    <label for="iptchildname">Nome</label>
                     <span class="focus-input"></span>
                 </div>
-                <!-- Foto do perfil -->
-                <div class="container_main_input_photo">
-                    <label for="iptphoto">Foto de Perfil</label>
-                    <form action="/action_page.php">
-                        <input type="file" id="iptphoto" name="filename">
-                        <input type="submit">
-                    </form>
+                <!-- Outros Filhos -->
+                <div class="container_main_input_btn_add_child">
+                    <button><span class="material-icons">add_box</span>Adicionar outro filho</button>
                 </div>
-                <!-- Cor -->
-                <div class="container_main_input_color">
-                    <label for="iptcolor">Cor</label>
-                </div>
-                <!-- Senha -->
-                <div class="container_main_input_password">
-                    <input class="main_input_password" id="iptpassword" type="password">
-                    <label for="iptpassword">Senha</label>
-                    <span class="focus-input"></span>
-                </div>
-                <!-- Confirmar Senha -->
-                <div class="container_main_input_password_confirm">
-                    <input class="main_input_password_confirm" id="iptpasswordconf" type="password">
-                    <label for="iptpasswordconf">Senha</label>
-                    <span class="focus-input"></span>
-                </div>
+
                 <!-- Botoes -->
                 <div class="container_main_input_btns">
-                    <button>Atualizar meu Perfil</button>
+                    <button>Cancelar</button>
+                    <button>Finalizar</button>
                 </div>
+
                 <!-- Minha Familia-->
                 <div class="container_main_output_myfamily">
                     <span>Minha Familia</span>

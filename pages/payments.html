@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_logotipo">
+                Logotipo
+            </div>
+            <div>
+                <span class="material-icons">face</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Nome Responsável
+                    <span class="material-icons">expand_more</span>
+                </button>
+                </div>
+            </div>
+            <div class="navbar">
+                <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
+                <a href="#"><span class="material-icons">date_range</span>Calendário</a>
+                <a href="#"><span class="material-icons">task</span>Tarefas</a>
+                <a href="#"><span class="material-icons">request_quote</span>Comprovantes</a>
+                <a href="#"><span class="material-icons">question_answer</span>Recados</a>
+                <a href="#"><span class="material-icons">people</span>Cadastros</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="patch">
+                    <span>Financeiro</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Pagamentos</span>
+                </div>
+                <div class="container_main_btn">
+                    <button><span class="material-icons">add_circle_outline</span>Criar novo Pagamento</button>
+                </div>
+                <!-- Tab links -->
+                <div class="tabs">
+                    <button class="tablinks">Todos</button>
+                    <button class="tablinks">Aceitos</button>
+                    <button class="tablinks">Pendentes</button>
+                    <button class="tablinks">Rejeitados</button>
+                </div>
+
+                <!-- Tab content -->
+                <div id="Todos" class="tabcontent">
+                    <h3>Todos</h3>
+                </div>
+
+                <div id="Aceitos" class="tabcontent">
+                    <h3>Aceitos</h3>
+                </div>
+
+                <div id="Pendentes" class="tabcontent">
+                    <h3>Pendentes</h3>
+                </div>
+                <div id="Rejeitados" class="tabcontent">
+                    <h3>Rejeitados</h3>
+                </div>
+
+                <div class="tbPayments">
+                    <table>
+                        <tr>
+                            <th>Data do Pagamento</th>
+                            <th>Pagador</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                        <tr>
+                            <td>04/09/2021</td>
+                            <td>Responsável 1</td>
+                            <td>500,00</td>
+                            <td>Aprovado</td>
+                            <td>
+                                <span class="material-icons">search</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20/09/2021</td>
+                            <td>Responsável 1</td>
+                            <td>300,00</td>
+                            <td>Pendente</td>
+                            <td>
+                                <span class="material-icons">search</span>
+                                <span class="material-icons">edit</span>
+                                <span class="material-icons">delete</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>20/09/2021</td>
+                            <td>Responsável 1</td>
+                            <td>300,00</td>
+                            <td>Pendente</td>
+                            <td>
+                                <span class="material-icons">search</span>
+                                <span class="material-icons">thumb_up_alt</span>
+                                <span class="material-icons">thumb_down</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Minha Familia-->
+                <div class="container_main_output_myfamily">
+                    <span>Minha Familia</span>
+                    <div class="container_main_output_myfamily_card">
+                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                        <label for="spnparent1">Responsável 1</label>
+                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                        <label for="spnparent2">Responsável 2</label>
+                        <span class="material-icons" id="spnchild">insert_emoticon</span>
+                        <label for="spnchild">Filho</label>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>Rodapé</footer>
+    </div>
+</body>
+
+</html>
