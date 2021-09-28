@@ -15,89 +15,92 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header_logotipo">
-            Logotipo
-        </div>
-        <div>
-            <span class="material-icons">face</span>
-            <div class="dropdown">
-                <button class="dropbtn">Nome Responsável
+    <div class="container">
+        <header class="header">
+            <div class="header_logotipo">
+                Logotipo
+            </div>
+            <div>
+                <span class="material-icons">face</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Nome Responsável
                     <span class="material-icons">expand_more</span>
                 </button>
+                </div>
             </div>
-        </div>
-        <div class="navbar">
-            <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
-            <a href="#"><span class="material-icons">date_range</span>Calendário</a>
-            <a href="#"><span class="material-icons">task</span>Tarefas</a>
-            <a href="#"><span class="material-icons">request_quote</span>Comprovantes</a>
-            <a href="#"><span class="material-icons">question_answer</span>Recados</a>
-            <a href="#"><span class="material-icons">people</span>Cadastros</a>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container_main">
-            <!-- Caminho -->
-            <div class="">
-                <span>Financeiro</span>
-                <span class="material-icons">chevron_right</span>
-                <span>Pagamentos</span>
-                <span class="material-icons">chevron_right</span>
-                <span>Novo pagamento</span>
+            <div class="navbar">
+                <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
+                <a href="#"><span class="material-icons">date_range</span>Calendário</a>
+                <a href="#"><span class="material-icons">task</span>Tarefas</a>
+                <a href="#"><span class="material-icons">request_quote</span>Comprovantes</a>
+                <a href="#"><span class="material-icons">question_answer</span>Recados</a>
+                <a href="#"><span class="material-icons">people</span>Cadastros</a>
             </div>
-            <!-- Descrição -->
-            <div class="container_main_input_description">
-                <input class="main_input_description" id="iptdescription" type="text">
-                <label for="iptdescription">Descrição</label>
-                <span class="focus-input"></span>
-            </div>
-            <!-- Valor pago -->
-            <div class="container_main_input_amount_paid">
-                <input class="main_input_amount_paid" id="iptamount_paid" type="text">
-                <label for="iptamount_paid">Valor Pago</label>
-                <span class="focus-input"></span>
-            </div>
-            <!-- Data -->
-            <div class="container_main_input_date">
-                <input class="main_input_date" id="iptdate" type="text">
-                <label for="iptdate">Data</label>
-                <span class="focus-input"></span>
-            </div>
-            <!-- Pago à -->
-            <div class="container_main_input_parent">
-                <label for="iptparent">Pago à</label>
-                <span class="material-icons">face</span>
-            </div>
-            <!-- Anexos -->
-            <div class="container_main_input_file">
-                <form action="/action_page.php">
-                    <input type="file" id="iptfile" name="filename">
-                    <input type="submit">
-                </form>
-                <label for="iptfile">Anexos</label>
-            </div>
-            <!-- Botoes -->
-            <div class="container_main_input_btns">
-                <button>Cancelar</button>
-                <button>Lançar Pagamento</button>
-            </div>
-
-            <!-- Minha Familia-->
-            <div class="container_main_output_myfamily">
-                <span>Minha Familia</span>
-                <div class="container_main_output_myfamily_card">
-                    <span class="material-icons" id="spnparent1">insert_emoticon</span>
-                    <label for="spnparent1">Responsável 1</label>
-                    <span class="material-icons" id="spnparent2">insert_emoticon</span>
-                    <label for="spnparent2">Responsável 2</label>
-                    <span class="material-icons" id="spnchild">insert_emoticon</span>
-                    <label for="spnchild">Filho</label>
+        </header>
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="">
+                    <span>Financeiro</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Pagamentos</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Novo pagamento</span>
+                </div>
+                <!-- Descrição -->
+                <div class="container_main_input_description">
+                    <input class="main_input_description" id="iptdescription" type="text">
+                    <label for="iptdescription">Descrição</label>
+                    <span class="focus-input"></span>
+                </div>
+                <!-- Valor pago -->
+                <div class="container_main_input_amount_paid">
+                    <input class="main_input_amount_paid" id="iptamount_paid" type="text">
+                    <label for="iptamount_paid">Valor Pago</label>
+                    <span class="focus-input"></span>
+                </div>
+                <!-- Data -->
+                <div class="container_main_input_date">
+                    <input class="main_input_date" id="iptdate" type="text">
+                    <label for="iptdate">Data</label>
+                    <span class="focus-input"></span>
+                </div>
+                <!-- Pago à -->
+                <div class="container_main_input_parent">
+                    <label for="iptparent">Pago à</label>
+                    <span class="material-icons">face</span>
+                </div>
+                <!-- Anexos -->
+                <div class="container_main_input_file">
+                    <form action="/action_page.php">
+                        <input type="file" id="iptfile" name="filename">
+                        <input type="submit">
+                    </form>
+                    <label for="iptfile">Anexos</label>
+                </div>
+                <!-- Botoes -->
+                <div class="container_main_input_btns">
+                    <button>Cancelar</button>
+                    <button>Lançar Pagamento</button>
                 </div>
 
+                <!-- Minha Familia-->
+                <div class="container_main_output_myfamily">
+                    <span>Minha Familia</span>
+                    <div class="container_main_output_myfamily_card">
+                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                        <label for="spnparent1">Responsável 1</label>
+                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                        <label for="spnparent2">Responsável 2</label>
+                        <span class="material-icons" id="spnchild">insert_emoticon</span>
+                        <label for="spnchild">Filho</label>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+        <footer>Rodapé</footer>
+    </div>
 
 </body>
 
