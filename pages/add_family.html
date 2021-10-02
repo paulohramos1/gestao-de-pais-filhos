@@ -11,26 +11,61 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="../css/add_family.css" type="text/css">
+    <link rel="stylesheet" href="../flexbox/add_family-flexbox.css" type="text/css">
+    <link rel="stylesheet" href="../css/material-icon.css" type="text/css">
+
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <nav>
-                <div>Logotipo</div>
-                <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
-                <a href="#"><span class="material-icons">date_range</span>Calendário</a>
-                <a href="#"><span class="material-icons">task</span>Tarefas</a>
-                <a href="#"><span class="material-icons">request_quote</span>Comprovantes</a>
-                <a href="#"><span class="material-icons">question_answer</span>Recados</a>
-                <a href="#"><span class="material-icons">people</span>Cadastros</a>
+            <nav class="navbar">
+                <div class="navbar-up">
+                    <div class="navbar-up-logo"></div>
+                    <div class="navbar-up-profile">
+                        <span class="material-icons md-48 md-blue">face</span>
+                        <div class="navbar-up-profile-down">
+                            <button class="navbar-up-profile-downbtn">
+                                Nome Responsável
+                                <span class="material-icons">expand_more</span>
+                            </button>
 
-                <div>
-                    <span class="material-icons">face</span>
-                    <div>
-                        <button>Nome Responsável
-                            <span class="material-icons">expand_more</span>
-                        </button>
+                            <div class="navbar-up-profile-down-content">
+                                <a href="#">Item do menu 1</a>
+                                <a href="#">Item do menu 2</a>
+                                <a href="#">Item do menu 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-down">
+                    <div class="navbar-down1">
+                        <div class="navbar-group">
+                            <span class="material-icons">home</span>
+                            <a class="active" href="#">Painel Principal</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">date_range</span>
+                            <a href="#">Calendário</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">task</span>
+                            <a href="#">Tarefas</a></div>
+                        <div class="navbar-group">
+                            <span class="material-icons">request_quote</span>
+                            <a href="#">Comprovantes</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">question_answer</span>
+                            <a href="#">Recados</a>
+                        </div>
+                    </div>
+                    <div class="navbar-down2">
+                        <div class="navbar-group">
+                            <span class="material-icons">people</span>
+                            <a href="#">Cadastros</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -38,63 +73,60 @@
         <main class="main">
             <div class="container_main">
                 <!-- Caminho -->
-                <div class="">
+                <div class="main-title">
                     <span>Cadastro da Família</span>
                 </div>
-                <!-- Seus Dados -->
-                <div class="container_main_input_yourdatas">
-                    <p>Seus Dados</p>
-                    <input class="main_input_yourname" id="iptyourname" type="text">
-                    <label for="iptyourname">Nome</label>
-                    <span class="focus-input"></span>
-                    <input class="main_input_yourphone" id="iptyourphone" type="text">
-                    <label for="iptyourphone">Telefone</label>
-                    <span class="focus-input"></span>
-                </div>
-                <!-- Dados do parceiro -->
-                <div class="container_main_input_otherdatas">
-                    <p>Dados do parceiro</p>
-                    <input class="main_input_othername" id="iptothername" type="text">
-                    <label for="iptothername">Nome</label>
-                    <span class="focus-input"></span>
-                    <input class="main_input_otherphone" id="iptotherphone" type="text">
-                    <label for="iptotherphone">Telefone</label>
-                    <span class="focus-input"></span>
-                </div>
-                <!-- Filhos -->
-                <div class="container_main_input_childdatas">
-                    <p>Seus Filhos</p>
-                    <input class="main_input_childname" id="iptchildname" type="text">
-                    <label for="iptchildname">Nome</label>
-                    <span class="focus-input"></span>
-                </div>
-                <!-- Outros Filhos -->
-                <div class="container_main_input_btn_add_child">
-                    <button><span class="material-icons">add_box</span>Adicionar outro filho</button>
-                </div>
-
-                <!-- Botoes -->
-                <div class="container_main_input_btns">
-                    <button>Cancelar</button>
-                    <button>Finalizar</button>
-                </div>
-
-                <!-- Minha Familia-->
-                <div class="container_main_output_myfamily">
-                    <span>Minha Familia</span>
-                    <div class="container_main_output_myfamily_card">
-                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
-                        <label for="spnparent1">Responsável 1</label>
-                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
-                        <label for="spnparent2">Responsável 2</label>
-                        <span class="material-icons" id="spnchild">insert_emoticon</span>
-                        <label for="spnchild">Filho</label>
+                <form class="main-form" action="">
+                    <!-- Seus Dados -->
+                    <div class="datas-group">
+                        <span class="datas-title">Seus Dados</span>
+                        <div class="datas-group1">
+                            <label for="iptyourname" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptyourname" type="text">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptyourphone" class="datas-label">Telefone</label>
+                            <input class="datas-input" id="iptyourphone" type="text">
+                        </div>
                     </div>
+                    <!-- Dados do parceiro -->
+                    <div class="datas-group">
+                        <span class="datas-title">Dados do parceiro</span>
+                        <div class="datas-group1">
+                            <label for="iptothername" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptothername" type="text">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptotherphone" class="datas-label">Telefone</label>
+                            <input class="datas-input" id="iptotherphone" type="text">
+                        </div>
 
-                </div>
+                    </div>
+                    <!-- Filhos -->
+                    <div class="datas-group" id="datas-group-child">
+                        <span class="datas-title">Seus Filhos</span>
+                        <div class="datas-group1">
+                            <label for="iptchildname" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptchildname" type="text">
+                        </div>
+                    </div>
+                    <!-- Outros Filhos -->
+                    <div class="main-group-addchild">
+                        <button class="btn_add"><span class="material-icons">add_box</span>Adicionar outro filho</button>
+                    </div>
+                    <!-- Botoes -->
+                    <div class="main-group-btns">
+                        <button class="group-btns">Cancelar</button>
+                        <button class="group-btns">Finalizar</button>
+                    </div>
+                </form>
             </div>
         </main>
-        <footer>Rodapé</footer>
+        <footer>
+            <div class="container_footer">
+
+            </div>
+        </footer>
     </div>
 </body>
 
