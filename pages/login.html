@@ -11,37 +11,45 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/login-flexbox.css">
 </head>
 
 <body>
-    <div>
-        <form>
-            <!-- <img src="#" alt=""> -->
-            <div>
-                <span class="material-icons">person</span>
-                <input type="text" placeholder="Úsuario">
-                <span class="focus-input"></span>
+    <div class="container">
+        <form class="form" action="" method="POST">
+            <div class="form-group">
+                LOGOTIPO
             </div>
-            <div>
-                <span class="material-icons">lock</span>
-                <input type="password" name="" placeholder="Senha">
-                <span class="focus-input"></span>
-            </div>
-            <div>
-                <div>
-                    <input type="checkbox" id="ckb1" name="remember">
-                    <label for="ckb1">
-                    Manter conectado
-                    </label>
-                </div>
-                <div>
-                    <a href="">Esqueceu a senha?</a>
+            <div class="form-group">
+                <span class="material-icons md-48 md-blue">person</span>
+                <div class="form-group-input">
+                    <input type="text" class="form-control" placeholder="Usúario" id="iptuser" name="iptuser" tabindex="1" required>
+                    <label for="iptuser" class="form-label">Úsuario</label>
                 </div>
             </div>
-            <div>
+            <div class="form-group">
+                <span class="material-icons md-48 md-blue">lock</span>
+                <div class="form-group-input">
+                    <input type="password" class="form-control" placeholder="Senha" id="iptpassword" name="iptpassword" tabindex="2" required>
+                    <label for="iptpassword" class="form-label">Senha</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group-conn">
+                    <div class="form-group-conn-keep">
+                        <input type="checkbox" id="ckb1" name="remember">
+                        <label for="ckb1">Manter conectado</label>
+                    </div>
+                    <div class="form-group-conn-forgot">
+                        <a href="">Esqueceu a senha?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
                 <button class="login_form_btn">Entrar</button>
             </div>
-            <div>
+            <div class="form-group">
                 <a href="#">Criar uma conta nova</a>
             </div>
         </form>
