@@ -11,64 +11,59 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="../css/material-icon.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/add_event.css">
 </head>
 
 <body>
     <div class="container">
-        <form class="container_addEvent_form">
-            <div class="container_addEvent_calendar">
+        <form class="container-form">
+            <div>
                 <span class="material-icons">close</span>
             </div>
-            <div class="container_addEvent_btn_newEvent">
-                <button class="addEvent_btn_newEvent">
+            <div >
+                <button>
                     <span class="material-icons">add_circle_outline</span>
                     Adicionar um evento
                 </button>
-                <button class="addEvent_btn_newTask">
+                <button >
                     <span class="material-icons">add_circle_outline</span>
                     Adicionar uma tarefa
                 </button>
             </div>
-            <div class="container_addEvent_input_name">
+            <div>
                 <label for="iptName">Nome</label>
-                <input class="addEvent_input_name" id="iptName" type="text">
-                <span class="focus-input"></span>
+                <input id="iptName" type="text">
             </div>
-            <div class="container_addEvent_input_dtInitial">
+            <div >
                 <label for="iptdtInitial">Data de Ínicio</label>
-                <input class="addEvent_input_dtInitial" id="iptdtInitial" type="text">
-                <span class="focus-input"></span>
+                <input id="iptdtInitial" type="text">
             </div>
-            <div class="container_addEvent_input_dtFinish">
+            <div >
                 <label for="iptdtFinish">Data de Término</label>
-                <input class="addEvent_input_dtFinish" id="iptdtFinish" type="text">
-                <span class="focus-input"></span>
+                <input id="iptdtFinish" type="text">
             </div>
-            <div class="container_addEvent_input_allDay">
-                <input type="checkbox" id="ckb2" class="addEvent_input_allDay_checkbox" name="allDay">
+            <div>
+                <input type="checkbox" id="ckb2" name="allDay">
                 <label for="ckb2">
                 Dia Todo
                 </label>
             </div>
-
-            <div class="container_addEvent_input_child">
+            <div >
                 <label for="iptChild">Filho</label>
                 <span class="material-icons">face</span>
             </div>
-            <div class="container_addEvent_input_place">
+            <div >
                 <label for="iptplace">Lugar</label>
-                <input class="addEvent_input_place" id="iptdtplace" type="text">
-                <span class="focus-input"></span>
+                <input  id="iptdtplace" type="text">
             </div>
-            <div class="container_addEvent_input_notes">
+            <div >
                 <label for="iptnotes">Notas</label>
-                <textarea class="addEvent_input_notes" id="iptnotes"></textarea>
-                <span class="focus-input"></span>
+                <textarea  id="iptnotes"></textarea>
             </div>
-            <div class="container_addEvent_btn">
-                <button class="addEvent_btn_add">Adicionar</button>
-                <button class="addEvent_btn_cancel">Cancelar</button>
+            <div class="main-form-group-btns">
+                <button class="group-btns">Cancelar</button>
+                <button class="group-btns">Adicionar</button>
             </div>
         </form>
     </div>
