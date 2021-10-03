@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.form {
+    width: 25%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 15px 2em #0004;
+    background-color: rgba(52, 158, 235, 0.4);
+}
+
+.form-group {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 5px;
+    transition: all .3s;
+}
+
+.form-group-conn {
+    width: 100%;
+}
+
+.form-group-input {
+    width: 400px;
+    height: 4em;
+    transition: all .3s;
+}
+
+.form-label {
+    display: block;
+    width: 15em;
+    font-size: 1.2em;
+    color: white;
+    opacity: 1;
+    transform: translateY(-2em);
+    transform-origin: 0 0;
+    transition: all .3s;
+    padding: 0 8px;
+}
+
+.form-control {
+    box-shadow: none;
+    width: 15em;
+    height: 3em;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+
+.form-group-input:focus-within {
+    transform: scale(1.05, 1.05);
+}
+
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
+    transform: translateY(-3em) scale(.7);
+    padding: 0 8px;
+}
+
+.form-group-conn-forgot>a,
+.form-group-conn-keep>label,
+.form-group>a {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+.login_form_btn {
+    border-radius: 8px;
+    border: 2px solid #0279a1;
+    background-color: #0279a1;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 24px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+}
+
+.login_form_btn:hover {
+    background-color: rgba(0, 140, 186, 0.1);
+    color: #0279a1;
+    border: 2px solid #0279a1;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
