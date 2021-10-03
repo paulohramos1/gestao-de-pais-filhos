@@ -1,26 +1,34 @@
-.main-form {
+.tb-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.datas-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.datas-group1 {
+.tb-group-tr-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-form-group-btns {
+.tb-group-tr-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tb-group-th {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tb-group-td {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }

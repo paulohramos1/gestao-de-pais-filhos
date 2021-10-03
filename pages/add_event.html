@@ -12,60 +12,122 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="../css/material-icon.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" href="../css/form.css" type="text/css">
+    <link rel="stylesheet" href="../flexbox/form-flexbox.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/add_event.css">
+    <link rel="stylesheet" href="../flexbox/add_event-flexbox.css" type="text/css">
 </head>
 
 <body>
     <div class="container">
-        <form class="container-form">
-            <div>
-                <span class="material-icons">close</span>
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-up">
+                    <div class="navbar-up-logo"></div>
+                    <div class="navbar-up-profile">
+                        <span class="material-icons md-48 md-blue">face</span>
+                        <div class="navbar-up-profile-down">
+                            <button class="navbar-up-profile-downbtn">
+                                Nome Responsável
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                            <div class="navbar-up-profile-down-content">
+                                <a href="#">Item do menu 1</a>
+                                <a href="#">Item do menu 2</a>
+                                <a href="#">Item do menu 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-down">
+                    <div class="navbar-down1">
+                        <div class="navbar-group">
+                            <span class="material-icons">home</span>
+                            <a class="active" href="#">Painel Principal</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">date_range</span>
+                            <a href="#">Calendário</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">task</span>
+                            <a href="#">Tarefas</a></div>
+                        <div class="navbar-group">
+                            <span class="material-icons">request_quote</span>
+                            <a href="#">Comprovantes</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">question_answer</span>
+                            <a href="#">Recados</a>
+                        </div>
+                    </div>
+                    <div class="navbar-down2">
+                        <div class="navbar-group">
+                            <span class="material-icons">people</span>
+                            <a href="#">Cadastros</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="main-title">
+                    <span>Adicionar um novo Evento</span>
+                </div>
+                <form class="main-form">
+                    <div class="main-form-title">
+                        <span>Segunda - 04/10/2021</span>
+                        <span class="material-icons">close</span>
+                    </div>
+                    <div class="datas-group">
+                        <div class="datas-group1">
+                            <label for="iptName" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptName" type="text">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptdtInitial" class="datas-label">Data de Ínicio</label>
+                            <input class="datas-input" id="iptdtInitial" type="date">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptdtFinish" class="datas-label">Data de Término</label>
+                            <input id="iptdtFinish" type="date" class="datas-input">
+                        </div>
+                        <!-- <div class="datas-group1">
+                        <label for="ckb2">Dia Todo</label>
+                        <input type="checkbox" id="ckb2" name="allDay">
+                    </div> -->
+                        <div class="datas-group1">
+                            <label for="iptChild" class="datas-label">Filho</label>
+                            <span class="material-icons">face</span>
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptplace" class="datas-label">Lugar</label>
+                            <input id="iptdtplace" type="text" class="datas-input">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptnotes" class="datas-label">Notas</label>
+                            <textarea id="iptnotes"></textarea>
+                        </div>
+                    </div>
+                    <div class="main-form-group-btns">
+                        <button class="group-btns">Cancelar</button>
+                        <button class="group-btns">Adicionar</button>
+                    </div>
+                </form>
             </div>
-            <div >
-                <button>
-                    <span class="material-icons">add_circle_outline</span>
-                    Adicionar um evento
-                </button>
-                <button >
-                    <span class="material-icons">add_circle_outline</span>
-                    Adicionar uma tarefa
-                </button>
-            </div>
-            <div>
-                <label for="iptName">Nome</label>
-                <input id="iptName" type="text">
-            </div>
-            <div >
-                <label for="iptdtInitial">Data de Ínicio</label>
-                <input id="iptdtInitial" type="text">
-            </div>
-            <div >
-                <label for="iptdtFinish">Data de Término</label>
-                <input id="iptdtFinish" type="text">
-            </div>
-            <div>
-                <input type="checkbox" id="ckb2" name="allDay">
-                <label for="ckb2">
-                Dia Todo
-                </label>
-            </div>
-            <div >
-                <label for="iptChild">Filho</label>
-                <span class="material-icons">face</span>
-            </div>
-            <div >
-                <label for="iptplace">Lugar</label>
-                <input  id="iptdtplace" type="text">
-            </div>
-            <div >
-                <label for="iptnotes">Notas</label>
-                <textarea  id="iptnotes"></textarea>
-            </div>
-            <div class="main-form-group-btns">
-                <button class="group-btns">Cancelar</button>
-                <button class="group-btns">Adicionar</button>
-            </div>
-        </form>
+        </main>
+        <footer>
+            <div class="container_footer"></div>
+        </footer>
     </div>
 </body>
 

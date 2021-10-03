@@ -17,19 +17,14 @@
     align-items: center;
 }
 
+.main-top,
 .main-title {
     align-self: flex-start;
 }
 
-.main-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main-form-group-btns {
+.main-down {
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: flex-end;
+    align-items: center;
 }

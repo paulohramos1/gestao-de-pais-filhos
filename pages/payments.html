@@ -10,27 +10,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/material-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/form-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/payments.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/payments-flexbox.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <nav>
-                <div>Logotipo</div>
-                <a class="active" href="#"><span class="material-icons">home</span>Painel Principal</a>
-                <a href="#"><span class="material-icons">date_range</span>Calendário</a>
-                <a href="#"><span class="material-icons">task</span>Tarefas</a>
-                <a href="#"><span class="material-icons">request_quote</span>Comprovantes</a>
-                <a href="#"><span class="material-icons">question_answer</span>Recados</a>
-                <a href="#"><span class="material-icons">people</span>Cadastros</a>
+            <nav class="navbar">
+                <div class="navbar-up">
+                    <div class="navbar-up-logo"></div>
+                    <div class="navbar-up-profile">
+                        <span class="material-icons md-48 md-blue">face</span>
+                        <div class="navbar-up-profile-down">
+                            <button class="navbar-up-profile-downbtn">
+                                Nome Responsável
+                                <span class="material-icons">expand_more</span>
+                            </button>
 
-                <div>
-                    <span class="material-icons">face</span>
-                    <div>
-                        <button>Nome Responsável
-                            <span class="material-icons">expand_more</span>
-                        </button>
+                            <div class="navbar-up-profile-down-content">
+                                <a href="#">Item do menu 1</a>
+                                <a href="#">Item do menu 2</a>
+                                <a href="#">Item do menu 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-down">
+                    <div class="navbar-down1">
+                        <div class="navbar-group">
+                            <span class="material-icons">home</span>
+                            <a class="active" href="#">Painel Principal</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">date_range</span>
+                            <a href="#">Calendário</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">task</span>
+                            <a href="#">Tarefas</a></div>
+                        <div class="navbar-group">
+                            <span class="material-icons">request_quote</span>
+                            <a href="#">Comprovantes</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">question_answer</span>
+                            <a href="#">Recados</a>
+                        </div>
+                    </div>
+                    <div class="navbar-down2">
+                        <div class="navbar-group">
+                            <span class="material-icons">people</span>
+                            <a href="#">Cadastros</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -38,99 +79,312 @@
         <main class="main">
             <div class="container_main">
                 <!-- Caminho -->
-                <div class="patch">
-                    <span>Financeiro</span>
-                    <span class="material-icons">chevron_right</span>
-                    <span>Pagamentos</span>
-                </div>
-                <div class="container_main_btn">
-                    <button><span class="material-icons">add_circle_outline</span>Criar novo Pagamento</button>
-                </div>
-                <!-- Tab links -->
-                <div class="tabs">
-                    <button class="tablinks">Todos</button>
-                    <button class="tablinks">Aceitos</button>
-                    <button class="tablinks">Pendentes</button>
-                    <button class="tablinks">Rejeitados</button>
-                </div>
-
-                <!-- Tab content -->
-                <div id="Todos" class="tabcontent">
-                    <h3>Todos</h3>
-                </div>
-
-                <div id="Aceitos" class="tabcontent">
-                    <h3>Aceitos</h3>
-                </div>
-
-                <div id="Pendentes" class="tabcontent">
-                    <h3>Pendentes</h3>
-                </div>
-                <div id="Rejeitados" class="tabcontent">
-                    <h3>Rejeitados</h3>
-                </div>
-
-                <div class="tbPayments">
-                    <table>
-                        <tr>
-                            <th>Data do Pagamento</th>
-                            <th>Pagador</th>
-                            <th>Valor</th>
-                            <th>Status</th>
-                            <th>Ações</th>
-                        </tr>
-                        <tr>
-                            <td>04/09/2021</td>
-                            <td>Responsável 1</td>
-                            <td>500,00</td>
-                            <td>Aprovado</td>
-                            <td>
-                                <span class="material-icons">search</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>20/09/2021</td>
-                            <td>Responsável 1</td>
-                            <td>300,00</td>
-                            <td>Pendente</td>
-                            <td>
-                                <span class="material-icons">search</span>
-                                <span class="material-icons">edit</span>
-                                <span class="material-icons">delete</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>20/09/2021</td>
-                            <td>Responsável 1</td>
-                            <td>300,00</td>
-                            <td>Pendente</td>
-                            <td>
-                                <span class="material-icons">search</span>
-                                <span class="material-icons">thumb_up_alt</span>
-                                <span class="material-icons">thumb_down</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!-- Minha Familia-->
-                <div class="container_main_output_myfamily">
-                    <span>Minha Familia</span>
-                    <div class="container_main_output_myfamily_card">
-                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
-                        <label for="spnparent1">Responsável 1</label>
-                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
-                        <label for="spnparent2">Responsável 2</label>
-                        <span class="material-icons" id="spnchild">insert_emoticon</span>
-                        <label for="spnchild">Filho</label>
+                <div class="main-top">
+                    <div class="main-title">
+                        <span>Financeiro</span>
+                        <span class="material-icons">chevron_right</span>
+                        <span>Pagamentos</span>
                     </div>
+                    <div class="main-group-add">
+                        <button class="btn_add"><span class="material-icons">add_box</span>Adicionar Pagamento</button>
+                    </div>
+                </div>
 
+                <div class="main-table">
+                    <!-- Tab links -->
+                    <div class="main-tabs">
+                        <button class="tablinks" onclick="openTab(event, 'Todos')" id="defaultOpen">Todos</button>
+                        <button class="tablinks" onclick="openTab(event, 'Aceitos')">Aceitos</button>
+                        <button class="tablinks" onclick="openTab(event, 'Pendentes')">Pendentes</button>
+                        <button class="tablinks" onclick="openTab(event, 'Rejeitados')">Rejeitados</button>
+                    </div>
+                    <!-- Tab content -->
+                    <div id="Todos" class="tabcontent">
+                        <table class="tb-payments-group">
+                            <thead class="tb-payments-thead">
+                                <tr class="tb-payments-title">
+                                    <th class="tb-payments-th">Data do Pagamento</th>
+                                    <th class="tb-payments-th">Pagador</th>
+                                    <th class="tb-payments-th">Valor</th>
+                                    <th class="tb-payments-th">Status</th>
+                                    <th class="tb-payments-th">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tb-payments-tbody">
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Aprovado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Aprovado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">edit</span>
+                                        <span class="material-icons">delete</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Aprovado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Aprovado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Aceitos" class="tabcontent">
+                        <table class="tb-payments-group">
+                            <thead class="tb-payments-thead">
+                                <tr class="tb-payments-title">
+                                    <th class="tb-payments-th">Data do Pagamento</th>
+                                    <th class="tb-payments-th">Pagador</th>
+                                    <th class="tb-payments-th">Valor</th>
+                                    <th class="tb-payments-th">Status</th>
+                                    <th class="tb-payments-th">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tb-payments-tbody">
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Aprovado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Pendentes" class="tabcontent">
+                        <table class="tb-payments-group">
+                            <thead class="tb-payments-thead">
+                                <tr class="tb-payments-title">
+                                    <th class="tb-payments-th">Data do Pagamento</th>
+                                    <th class="tb-payments-th">Pagador</th>
+                                    <th class="tb-payments-th">Valor</th>
+                                    <th class="tb-payments-th">Status</th>
+                                    <th class="tb-payments-th">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tb-payments-tbody">
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">edit</span>
+                                        <span class="material-icons">delete</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Pendente</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Rejeitados" class="tabcontent">
+                        <table class="tb-payments-group">
+                            <thead class="tb-payments-thead">
+                                <tr class="tb-payments-title">
+                                    <th class="tb-payments-th">Data do Pagamento</th>
+                                    <th class="tb-payments-th">Pagador</th>
+                                    <th class="tb-payments-th">Valor</th>
+                                    <th class="tb-payments-th">Status</th>
+                                    <th class="tb-payments-th">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tb-payments-tbody">
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">04/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">500,00</td>
+                                    <td class="tb-payments-td">Rejeitado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Rejeitado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">edit</span>
+                                        <span class="material-icons">delete</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-payments-item">
+                                    <td class="tb-payments-td">20/09/2021</td>
+                                    <td class="tb-payments-td">Responsável 1</td>
+                                    <td class="tb-payments-td">300,00</td>
+                                    <td class="tb-payments-td">Rejeitado</td>
+                                    <td class="tb-payments-td">
+                                        <span class="material-icons">search</span>
+                                        <span class="material-icons">thumb_up_alt</span>
+                                        <span class="material-icons">thumb_down</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Minha Familia-->
+                <!-- <div class="container_main_output_myfamily">
+                        <span>Minha Familia</span>
+                        <div class="container_main_output_myfamily_card">
+                            <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                            <label for="spnparent1">Responsável 1</label>
+                            <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                            <label for="spnparent2">Responsável 2</label>
+                            <span class="material-icons" id="spnchild">insert_emoticon</span>
+                            <label for="spnchild">Filho</label>
+                        </div>    
+                    </div> -->
+                <div class="main-down">
+                    <div class="main-group-add">
+                        <button class="btn_add"><span class="material-icons">add_box</span>Adicionar Pagamento</button>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer>Rodapé</footer>
+        <footer>
+            <div class="container_footer"></div>
+        </footer>
     </div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="../js/tab_payments.js"></script>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>
