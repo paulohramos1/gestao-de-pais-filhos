@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCalendario.css" type="text/css">
+    <link rel="stylesheet" href="css/add_family-flexbox.css" type="text/css">
+    <link rel="stylesheet" href="css/add_family.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+    <title>Calendario</title>
+</head>
+
+<body>
+
+    <!-- inicio da barra de opções  -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-up">
+                <div class="navbar-up-logo"></div>
+                <div class="navbar-up-profile">
+                    <span class="material-icons md-48 md-blue">face</span>
+                    <div class="navbar-up-profile-down">
+                        <button class="navbar-up-profile-downbtn">
+                            Nome Responsável
+                            <span class="material-icons">expand_more</span>
+                        </button>
+
+                        <div class="navbar-up-profile-down-content">
+                            <a href="#">Item do menu 1</a>
+                            <a href="#">Item do menu 2</a>
+                            <a href="#">Item do menu 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-down">
+                <div class="navbar-down1">
+                    <div class="navbar-group">
+                        <span class="material-icons">home</span>
+                        <a class="active" href="#">Painel Principal</a>
+                    </div>
+                    <div class="navbar-group">
+                        <span class="material-icons">date_range</span>
+                        <a href="#">Calendário</a>
+                    </div>
+                    <div class="navbar-group">
+                        <span class="material-icons">task</span>
+                        <a href="#">Tarefas</a>
+                    </div>
+                    <div class="navbar-group">
+                        <span class="material-icons">request_quote</span>
+                        <a href="#">Comprovantes</a>
+                    </div>
+                    <div class="navbar-group">
+                        <span class="material-icons">question_answer</span>
+                        <a href="#">Recados</a>
+                    </div>
+                </div>
+                <div class="navbar-down2">
+                    <div class="navbar-group">
+                        <span class="material-icons">people</span>
+                        <a href="#">Cadastros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- fim da barra de opções  -->
+
+    <!-- inicio calendario  -->
+    <div class="containerCalendar">
+        <div class="calendar">
+            <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sab</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </div>
+    <!-- Fim calendario  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
