@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Família</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/material-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/form-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_family.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/add_family-flexbox.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-up">
+                    <div class="navbar-up-logo"></div>
+                    <div class="navbar-up-profile">
+                        <span class="material-icons md-48 md-blue">face</span>
+                        <div class="navbar-up-profile-down">
+                            <button class="navbar-up-profile-downbtn">
+                                Nome Responsável
+                                <span class="material-icons">expand_more</span>
+                            </button>
+
+                            <div class="navbar-up-profile-down-content">
+                                <a href="#">Item do menu 1</a>
+                                <a href="#">Item do menu 2</a>
+                                <a href="#">Item do menu 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-down">
+                    <div class="navbar-down1">
+                        <div class="navbar-group">
+                            <span class="material-icons">home</span>
+                            <a class="active" href="#">Painel Principal</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">date_range</span>
+                            <a href="#">Calendário</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">task</span>
+                            <a href="#">Tarefas</a></div>
+                        <div class="navbar-group">
+                            <span class="material-icons">request_quote</span>
+                            <a href="#">Comprovantes</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">question_answer</span>
+                            <a href="#">Recados</a>
+                        </div>
+                    </div>
+                    <div class="navbar-down2">
+                        <div class="navbar-group">
+                            <span class="material-icons">people</span>
+                            <a href="#">Cadastros</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="main-title">
+                    <span>Cadastro da Família</span>
+                </div>
+                <form class="main-form" action="">
+                    <!-- Seus Dados -->
+                    <div class="datas-group">
+                        <span class="datas-title">Seus Dados</span>
+                        <div class="datas-group1">
+                            <label for="iptyourname" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptyourname" type="text">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptyourphone" class="datas-label">Telefone</label>
+                            <input class="datas-input" id="iptyourphone" type="text">
+                        </div>
+                    </div>
+                    <!-- Dados do parceiro -->
+                    <div class="datas-group">
+                        <span class="datas-title">Dados do parceiro</span>
+                        <div class="datas-group1">
+                            <label for="iptothername" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptothername" type="text">
+                        </div>
+                        <div class="datas-group1">
+                            <label for="iptotherphone" class="datas-label">Telefone</label>
+                            <input class="datas-input" id="iptotherphone" type="text">
+                        </div>
+
+                    </div>
+                    <!-- Filhos -->
+                    <div class="datas-group" id="datas-group-child">
+                        <span class="datas-title">Seus Filhos</span>
+                        <div class="datas-group1">
+                            <label for="iptchildname" class="datas-label">Nome</label>
+                            <input class="datas-input" id="iptchildname" type="text">
+                        </div>
+                    </div>
+                    <!-- Outros Filhos -->
+                    <div class="main-group-add">
+                        <button class="btn_add"><span class="material-icons">add_box</span>Adicionar outro filho</button>
+                    </div>
+                    <!-- Botoes -->
+                    <div class="main-form-group-btns">
+                        <button class="group-btns">Cancelar</button>
+                        <button class="group-btns">Finalizar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="container_footer"></div>
+        </footer>
+    </div>
+</body>
+
+</html>

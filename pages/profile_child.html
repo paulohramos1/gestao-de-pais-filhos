@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Filho</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/material-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/form-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile-child.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/profile_child-flexbox.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-up">
+                    <div class="navbar-up-logo"></div>
+                    <div class="navbar-up-profile">
+                        <span class="material-icons md-48 md-blue">face</span>
+                        <div class="navbar-up-profile-down">
+                            <button class="navbar-up-profile-downbtn">
+                                Nome Responsável
+                                <span class="material-icons">expand_more</span>
+                            </button>
+
+                            <div class="navbar-up-profile-down-content">
+                                <a href="#">Item do menu 1</a>
+                                <a href="#">Item do menu 2</a>
+                                <a href="#">Item do menu 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-down">
+                    <div class="navbar-down1">
+                        <div class="navbar-group">
+                            <span class="material-icons">home</span>
+                            <a class="active" href="#">Painel Principal</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">date_range</span>
+                            <a href="#">Calendário</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">task</span>
+                            <a href="#">Tarefas</a></div>
+                        <div class="navbar-group">
+                            <span class="material-icons">request_quote</span>
+                            <a href="#">Comprovantes</a>
+                        </div>
+                        <div class="navbar-group">
+                            <span class="material-icons">question_answer</span>
+                            <a href="#">Recados</a>
+                        </div>
+                    </div>
+                    <div class="navbar-down2">
+                        <div class="navbar-group">
+                            <span class="material-icons">people</span>
+                            <a href="#">Cadastros</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="main-title">
+                    <span>Informações</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Nome do Filho</span>
+                </div>
+                <!-- Diversos-->
+                <table name="tb_several" class="tb-group">
+                    <tr class="tb-group-tr-title">
+                        <th class="tb-group-th"><label class="tb-group-label-title">Diversos</label></th>
+                        <td class="tb-group-td"><span class="material-icons">edit</span></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptbirthday" class="tb-group-label">Data de Nascimento:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptbirthday" type="date"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptweight" class="tb-group-label">Peso:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptweight" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptheight" class="tb-group-label">Altura:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptheight" type="text"></td>
+                    </tr>
+                </table>
+                <!-- Medidas-->
+                <table name="tb_wear_size" class="tb-group">
+                    <tr class="tb-group-tr-title">
+                        <th class="tb-group-th"><label class="tb-group-label-title">Medidas/Tamanho</label></th>
+                        <td class="tb-group-td"><span class="material-icons">edit</span></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptpants" class="tb-group-label">Calça:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptpants" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="ipttshirt" class="tb-group-label">Camiseta:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="ipttshirt" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptblouse" class="tb-group-label">Blusa:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptblouse" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptdress" class="tb-group-label">Vestido:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptdress" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptshirt" class="tb-group-label">Camisa:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptshirt" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptbelt" class="tb-group-label">Cinto:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptbelt" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptskirt" class="tb-group-label">Saia:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptskirtt" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptsneakers" class="tb-group-label">Tênis:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptsneakers" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptshoes" class="tb-group-label">Sapato:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptshoes" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="ipthighheels" class="tb-group-label">Salto:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="ipthighheels" type="text"></td>
+                    </tr>
+                </table>
+
+                <!-- Saúde-->
+                <table name="tb_health" class="tb-group">
+                    <tr class="tb-group-tr-title">
+                        <th class="tb-group-th"><label class="tb-group-label-title">Saúde</label></th>
+                        <td class="tb-group-td"><span class="material-icons">edit</span></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptblood" class="tb-group-label">Grupo Sanguíno:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptblood" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptalergies" class="tb-group-label">Alergias:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptalergies" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptcronics" class="tb-group-label">Problemas Crônicoso:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptcronics" type="text"></td>
+                    </tr>
+                    <tr class="tb-group-tr-item">
+                        <th class="tb-group-th"><label for="iptilness" class="tb-group-label">Doenças:</label></th>
+                        <td class="tb-group-td"><input placeholder="Não Informado" class="tb-group-input" id="iptilness" type="text"></td>
+                    </tr>
+
+                </table>
+                <!-- Minha Familia-->
+                <!-- <div class="container_main_output_myfamily">
+                    <span>Minha Familia</span>
+                    <div class="container_main_output_myfamily_card">
+                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                        <label for="spnparent1">Responsável 1</label>
+                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                        <label for="spnparent2">Responsável 2</label>
+                        <span class="material-icons" id="spnchild">insert_emoticon</span>
+                        <label for="spnchild">Filho</label>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <footer>
+            <div class="container_footer"></div>
+        </footer>
+    </div>
+</body>
+
+</html>

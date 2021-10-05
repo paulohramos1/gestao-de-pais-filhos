@@ -1,0 +1,47 @@
+.main-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tabcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.tb-payments-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tb-payments-title,
+.tb-payments-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tb-payments-td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_add {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

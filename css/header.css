@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-color: #a2ddf2;
+    box-shadow: 0 0 .5em #0004;
+}
+
+.navbar-up {
+    padding: 15px 30px;
+}
+
+.navbar-up-logo {
+    width: 200px;
+    background-color: blue;
+}
+
+.navbar-down {
+    height: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border: 1px solid #0004;
+    border-style: solid none none none;
+}
+
+.navbar-down1 {
+    width: 50vw;
+}
+
+.navbar-down2 {
+    width: 30vw;
+}
+
+.navbar-down>div>div>a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #030e63;
+}
+
+.navbar-up-profile-downbtn {
+    background-color: #4fc6f0;
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 180px;
+}
+
+.navbar-up-profile-down {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-up-profile-down-content {
+    display: none;
+    position: absolute;
+    background-color: #4fc6f0;
+    color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+}
+
+.navbar-up-profile-down-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-up-profile-down-content a:hover {
+    background-color: #128bb5;
+    border-radius: 5px;
+}
+
+.navbar-up-profile-down:hover .navbar-up-profile-down-content {
+    display: block;
+}
+
+.navbar-up-profile-down:hover .navbar-up-profile-downbtn {
+    background-color: #4fc6f0;
+}

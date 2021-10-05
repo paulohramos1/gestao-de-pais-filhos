@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Conversa</title>
+    <title>Novo Pagamento</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" href="css/add_family.css" type="text/css">
-    <link rel="stylesheet" href="css/add_family-flexbox.css" type="text/css">
-    <link rel="stylesheet" href="css/material-icon.css" type="text/css">
-
+    <link rel="stylesheet" type="text/css" href="../css/material-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/form-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_payment.css">
 </head>
 
 <body>
@@ -51,8 +57,7 @@
                         </div>
                         <div class="navbar-group">
                             <span class="material-icons">task</span>
-                            <a href="#">Tarefas</a>
-                        </div>
+                            <a href="#">Tarefas</a></div>
                         <div class="navbar-group">
                             <span class="material-icons">request_quote</span>
                             <a href="#">Comprovantes</a>
@@ -71,72 +76,71 @@
                 </div>
             </nav>
         </header>
-        <main class="main">
+        <main class="main" id="main-addpayment">
             <div class="container_main">
                 <!-- Caminho -->
                 <div class="main-title">
-                    <span>Nova conversa</span>
+                    <span>Financeiro</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Pagamentos</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Novo pagamento</span>
                 </div>
                 <form class="main-form" action="">
-                    <!-- Seus Dados -->
                     <div class="datas-group">
+                        <!-- Descrição -->
                         <div class="datas-group1">
-                            <label for="iptyourname" class="datas-label">Assunto</label>
-                            <input class="datas-input" id="iptyourname" type="text">
+                            <label for="iptdescription" class="datas-label">Descrição</label>
+                            <input class="datas-input" id="iptdescription" type="text">
                         </div>
+                        <!-- Valor pago -->
                         <div class="datas-group1">
-                            <label for="iptyourphone" class="datas-label">Mensagem</label>
-                            <textarea class="datas-input" id="msg" rows="51" cols="330"></textarea>
+                            <label for="iptamount_paid" class="datas-label">Valor Pago</label>
+                            <input class="datas-input" id="iptamount_paid" type="text">
                         </div>
-
-                        <!-- cx seleção -->
-                        <div class="">
-                            <label for="padronizada" class="datas-label">Padronizado</label>
-                            <select id="padronizada">
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="opção1">opção 1</option>
-                                <option value="opção2">opção 2</option>
-                                <option value="opção3">opção 3</option>
-                            </select>
+                        <!-- Data -->
+                        <div class="datas-group1">
+                            <label for="iptdate" class="datas-label">Data</label>
+                            <input class="datas-input" id="iptdate" type="text">
                         </div>
-                    </div>
-
-                    <div>
-                        <!-- inicio quadro minha familia -->
-                        <thead>
-                            <tr>
-                                <th>Minha familia</th>
-
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Responsavel 1 </td>
-                            </tr>
-                            <tr>
-                                <td>Criança 1</td>
-                            </tr>
-                        </tbody>
-                    </div>
-
-
-
-
-                    <!-- Botoes -->
-                    <div class="main-group-btns">
-                        <button class="group-btns">Cancelar</button>
-                        <button class="group-btns">Enviar</button>
+                        <!-- Pago à -->
+                        <div class="datas-group1">
+                            <label for="iptparent" class="datas-label">Pago à</label>
+                            <span class="material-icons md-48">face</span>
+                        </div>
+                        <!-- Anexos -->
+                        <div class="datas-group1">
+                            <label for="iptfile" class="datas-label">Anexos</label>
+                            <form action="/action_page.php" class="form-attachments">
+                                <input type="file" id="iptfile" name="filename" multiple>
+                            </form>
+                        </div>
+                        <!-- Botoes -->
+                        <div class="main-form-group-btns">
+                            <button class="group-btns">Cancelar</button>
+                            <button class="group-btns">Enviar</button>
+                        </div>
                     </div>
                 </form>
+                <!-- Minha Familia-->
+                <!-- <div class="container_main_output_myfamily">
+                    <span>Minha Familia</span>
+                    <div class="container_main_output_myfamily_card">
+                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                        <label for="spnparent1">Responsável 1</label>
+                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                        <label for="spnparent2">Responsável 2</label>
+                        <span class="material-icons" id="spnchild">insert_emoticon</span>
+                        <label for="spnchild">Filho</label>
+                    </div>
+                </div> -->
             </div>
         </main>
         <footer>
-            <div class="container_footer">
-
-            </div>
+            <div class="container_footer"></div>
         </footer>
     </div>
+
 </body>
 
 </html>
