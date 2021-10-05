@@ -1,0 +1,36 @@
+.datas-label {
+    font-size: 25px;
+    color: midnightblue;
+}
+
+.datas-group {
+    width: 35%;
+    height: 40%;
+    padding: 20px 0;
+    box-shadow: 0 0 .5em #0004;
+    border-radius: 10px;
+}
+
+.datas-input {
+    width: 400px;
+    height: 35px;
+    background-color: #a2ddf2;
+    border-style: none;
+    border-radius: 5px;
+    color: midnightblue;
+    font-size: 18px;
+}
+
+.datas-group1 {
+    width: 95%;
+    padding: 0 20px;
+}
+
+input[type='file'] {
+    width: 400px;
+    height: 35px;
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
