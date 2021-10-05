@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styleCalendario.css" type="text/css">
-    <link rel="stylesheet" href="../css/add_family-flexbox.css" type="text/css">
-    <link rel="stylesheet" href="../css/add_family.css" type="text/css">
+    <title>Novo Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-
-
-    <title>Incluir despesas</title>
+    <link rel="stylesheet" type="text/css" href="../css/material-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/header-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/main-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/footer-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/form-flexbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/novaDespesa.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- inicio da barra de opções  -->
         <header class="header">
             <nav class="navbar">
                 <div class="navbar-up">
@@ -55,8 +57,7 @@
                         </div>
                         <div class="navbar-group">
                             <span class="material-icons">task</span>
-                            <a href="#">Tarefas</a>
-                        </div>
+                            <a href="#">Tarefas</a></div>
                         <div class="navbar-group">
                             <span class="material-icons">request_quote</span>
                             <a href="#">Comprovantes</a>
@@ -75,96 +76,90 @@
                 </div>
             </nav>
         </header>
+        <main class="main">
+            <div class="container_main">
+                <!-- Caminho -->
+                <div class="main-title">
+                    <span>Financeiro</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Despesas</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span>Nova Despesa</span>
+                </div>
+                <form class="main-form" action="">
+                    <div class="datas-group">
+                        <!-- Descrição -->
+                        <div class="datas-group1">
+                            <label for="iptdescription" class="datas-label">Descrição</label>
+                            <input class="datas-input" id="iptdescription" type="text">
+                        </div>
+                        <!-- Valor pago -->
+                        <div class="datas-group1">
+                            <label for="iptamount_paid" class="datas-label">Valor Pago</label>
+                            <input class="datas-input" id="iptamount_paid" type="text">
+                        </div>
+                        <!-- Data -->
+                        <div class="datas-group1">
+                            <label for="iptdate" class="datas-label">Data</label>
+                            <input class="datas-input" id="iptdate" type="text">
+                        </div>
+                        <!-- Categoria -->
+                        <div class="datas-group1">
+                            <label for="iptcategorie" class="datas-label">Categoria</label>
+                            <div id="iptcategorie">
+                                <select class="datas-input">
+                                    <option value="0" disabled selected>Selecione a Categoria</option>
+                                    <option value="1">Educação</option>
+                                    <option value="2">Alimentação</option>
+                                    <option value="3">Lazer</option>
+                                    <option value="4">Saúde</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Pago à -->
+                        <div class="datas-group1">
+                            <label for="iptparent" class="datas-label">Atribuído ao filho</label>
+                            <span class="material-icons md-48">face</span>
+                        </div>
 
-        <main>
-
-            <div id="novaDespesa">
-                <!-- botão inserir despesa -->
-                <button class="btn_add" onclick="incluirDespesa()">Criar nova despesa</button>
-
-
+                        <!-- Data -->
+                        <div class="datas-group1">
+                            <label for="iptdate" class="datas-label">Observações</label>
+                            <input class="datas-input" id="iptdate" type="text">
+                        </div>
+                        <!-- Anexos -->
+                        <div class="datas-group1">
+                            <label for="iptfile" class="datas-label">Anexos</label>
+                            <form action="/action_page.php" class="form-attachments">
+                                <input type="file" id="iptfile" name="filename" multiple>
+                            </form>
+                        </div>
+                        <!-- Botoes -->
+                        <div class="main-form-group-btns">
+                            <button class="group-btns">Cancelar</button>
+                            <button class="group-btns">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Minha Familia-->
+                <!-- <div class="container_main_output_myfamily">
+                    <span>Minha Familia</span>
+                    <div class="container_main_output_myfamily_card">
+                        <span class="material-icons" id="spnparent1">insert_emoticon</span>
+                        <label for="spnparent1">Responsável 1</label>
+                        <span class="material-icons" id="spnparent2">insert_emoticon</span>
+                        <label for="spnparent2">Responsável 2</label>
+                        <span class="material-icons" id="spnchild">insert_emoticon</span>
+                        <label for="spnchild">Filho</label>
+                    </div>
+                </div> -->
             </div>
-
-            <div id="buscar">
-                <input type="text" id="" placeholder="Buscar...">
-                <!-- campo de busca -->
-                <img src="lupa.png" id="">
-                <!-- inserir img para o botaão / lupa -->
-            </div>
-
-            <table border="1" id="resultadoCOnsulta">
-                <!-- tabela para apresentar os resultado da busca de despesas -->
-
-                <table class="table">
-                    <caption>Listagem</caption>
-                    <thead>
-                        <tr>
-                            <th>Data da despsa</th>
-                            <th> Nome </th>
-                            <th> Valor </th>
-                            <th> Categoria </th>
-                            <th> Status </th>
-                            <th> Açoes </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>04/09/2021</td>
-                            <td>Livros das escola</td>
-                            <td>50,00</td>
-                            <td>Educação</td>
-                            <td>Pendente</td>
-                            <td>.....</td>
-                        </tr>
-                        <tr>
-                            <td>02/09/2021</td>
-                            <td>Ida ao Shopping</td>
-                            <td>150,00</td>
-                            <td>Diversos</td>
-                            <td>Rejeitada</td>
-                            <td>.....</td>
-                        </tr>
-                        <tr>
-                            <td>01/09/2021</td>
-                            <td>Material Escolar</td>
-                            <td>300,00</td>
-                            <td>Educação</td>
-                            <td>Aprovado</td>
-                            <td>.....</td>
-                        </tr>
-                        <tr>
-                            <td>01/09/2021</td>
-                            <td>Material Escolar</td>
-                            <td>500,00</td>
-                            <td>Educação</td>
-                            <td>Pendente</td>
-                            <td>.....</td>
-                        </tr>
-                        <tr>
-                            <td>01/09/2021</td>
-                            <td>Material Escolar</td>
-                            <td>80,00</td>
-                            <td>Educação</td>
-                            <td>Aprovado</td>
-                            <td>.....</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="5">Total</td>
-                            <td colspan="1">R$ 9,999</td>
-                        </tr>
-                    </tfoot>
-                </table>
-
-
-
-
-
         </main>
+        <footer>
+            <div class="container_footer"></div>
+        </footer>
     </div>
+
 </body>
 
 </html>
-
-<!--Testando o Git-->
