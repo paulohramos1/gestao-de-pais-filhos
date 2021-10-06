@@ -5,27 +5,28 @@
     font-family: "Quicksand", sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
-.containerCalendar{
+
+.containerCalendar {
     width: 100%;
     height: 100vh;
-    background-color:#8B10F0;
+    background-color: #8B10F0;
     color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.calendar{
+.calendar {
     width: 45rem;
     height: 52rem;
     background-color: #7ba1aa6e;
-    box-shadow: 0 0.5rem 3rem rgba(0,0, 0, 0.4);
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
 
-.month{
+.month {
     width: 100%;
     height: 12rem;
     background-color: #e97e80c4;
@@ -34,15 +35,15 @@ html{
     align-items: center;
     padding: 0 2rem;
     text-align: center;
-    text-shadow: 0 0.3rem 0.5rem  rgba(0,0, 0, 0.5);
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.month > i {
-    font-size: 2.5rem ;
+.month>i {
+    font-size: 2.5rem;
     cursor: pointer;
 }
 
-.month > h1 {
+.month>h1 {
     font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -50,11 +51,11 @@ html{
     margin-bottom: 1rem;
 }
 
-.month > p {
+.month>p {
     font-size: 1.6rem;
 }
 
-.weekdays{
+.weekdays {
     width: 100%;
     height: 5rem;
     padding: 0 0.4rem;
@@ -62,38 +63,37 @@ html{
     align-items: center;
 }
 
-.weekdays > div {
+.weekdays>div {
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.1rem ;
+    letter-spacing: 0.1rem;
     width: calc(44.2rem / 7);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0, 0, 0.5);
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.days{
+.days {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
 }
 
-.days > div {
-    font-size:1.4rem;
+.days>div {
+    font-size: 1.4rem;
     margin: 0.3rem;
     width: calc(40.2rem / 7);
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0, 0, 0.5);
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.2s;
-
 }
 
-.days > div:hover:not(.today){
+.days>div:hover:not(.today) {
     background-color: #262626;
     border: 0.2rem solid#777;
     cursor: pointer;
@@ -104,8 +104,9 @@ html{
     opacity: 0.5;
 }
 
-.today{
+.today {
     background-color: #F50408;
 }
 
 
+/*Sprint_02*/
