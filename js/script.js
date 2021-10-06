@@ -79,3 +79,5 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+/*Sprint_02*/
